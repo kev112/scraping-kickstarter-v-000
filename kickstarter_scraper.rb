@@ -26,7 +26,7 @@ def create_project_hash
     }
   end
   
-  projects
+  projects = {:d => 's'}
 end
              
 
