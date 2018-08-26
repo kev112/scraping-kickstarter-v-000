@@ -19,10 +19,10 @@ def create_project_hash
   kickstarter.each do |project|
     title = 
     projects[title.to_sym] = {
-      :image => 
-      :description =>
-      :location =>
-      :percent_funded =>
+      :image => project.css("div.project-thumbnail a img").attribute("src").value
+      :description => project.css("p.bbcard_blurb").text
+      :location => project.css("span.location-name").text
+      :percent_funded => project.css("ul.project-stats li.first.funded strong").text
     }
   end
 end
