@@ -19,10 +19,13 @@ def create_project_hash
     title = 
     projects[title.to_sym] = {
       :image => 
+      :description =>
+      :location =>
+      :percent_funded =>
     }
   end
 end
 
 create_project_hash               
 
-        
+          
