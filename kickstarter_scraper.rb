@@ -15,9 +15,14 @@ def create_project_hash
 # location: project.css("span.location-name").text
 # fund: project.css("ul.project-stats li.first.funded strong").text
 
-  binding.pry
+  kickstarter.each do |project|
+    title = 
+    projects[title.to_sym] = {
+      :image => 
+    }
+  end
 end
 
 create_project_hash               
 
-        wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+        
