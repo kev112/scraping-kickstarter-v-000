@@ -14,7 +14,8 @@ def create_project_hash
 # description: project.css("p.bbcard_blurb").text
 # location: project.css("span.location-name").text
 # fund: project.css("ul.project-stats li.first.funded strong").text
-
+  projects = {}
+  
   kickstarter.each do |project|
     title = 
     projects[title.to_sym] = {
